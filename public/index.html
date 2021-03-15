@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>龙抬头 抬龙旗</title>
+    <link rel="stylesheet" href="./font/font1680.css" />
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script src="./pixi.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      window.nickName = '文博文博文博文博文博';
+      window.share_config = {};
+      window.share_title = ''; // 分享标题
+      window.share_desc = ''; // 分享标题
+      window.share_link = ''; // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+      window.share_pic = '';
+    </script>
+
+    <script>
+      var _mtac = { senseHash: 0, autoReport: 0 };
+      (function () {
+        var mta = document.createElement('script');
+        mta.src = '//pingjs.qq.com/h5/stats.js?v2.0.4';
+        mta.setAttribute('name', 'MTAH5');
+        mta.setAttribute('sid', '500709305');
+        mta.setAttribute('cid', '500709313');
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mta, s);
+      })();
+    </script>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
     </noscript>
     <div id="app"></div>
+    <audio src="./bg.mp3" loop preload id="audio"></audio>
     <!-- built files will be auto injected -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        function audioAutoPlay() {
+          var audio_ = document.getElementById('audio');
+          audio_.volume = 0.5;
+          document.addEventListener(
+            'WeixinJSBridgeReady',
+            function () {
+              audio_.play();
+            },
+            false
+          );
+        }
+        audioAutoPlay();
+      });
+      window.share_config && wx.config(window.share_config);
+      window.shareData = {
+        title: window.share_title, // 分享标题
+        desc: window.share_desc, // 分享标题
+        link: window.share_link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: window.share_pic,
+        success: function (res) {
+          // 用户确认分享后执行的回调函数
+          window.console.log(res);
+        },
+      };
+
+      wx.ready(function () {
+        wx.updateAppMessageShareData(window.shareData);
+        wx.updateTimelineShareData(window.shareData);
+      });
+    </script>
   </body>
 </html>

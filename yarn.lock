@@ -835,7 +835,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.12.13", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.8.4":
   version "7.13.9"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.13.9.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.13.9.tgz#97dbe2116e2630c489f22e0656decd60aaa1fcee"
   integrity sha1-l9viEW4mMMSJ8i4GVt7NYKqh/O4=
@@ -931,10 +931,376 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@pixi/accessibility@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/accessibility/download/@pixi/accessibility-6.0.0.tgz#e41d73688c4d7184a4a1966fff638ecc80bc4c94"
+  integrity sha1-5B1zaIxNcYSkoZZv/2OOzIC8TJQ=
+  dependencies:
+    "@pixi/canvas-renderer" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/app@6.0.0", "@pixi/app@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/app/download/@pixi/app-6.0.0.tgz#b3391587fb9a93d80ee8f6405516664ab13c5482"
+  integrity sha1-szkVh/uak9gO6PZAVRZmSrE8VII=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+
+"@pixi/canvas-display@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/canvas-display/download/@pixi/canvas-display-6.0.0.tgz#676c10b2f30920ba192773e3a1818d35194705c3"
+  integrity sha1-Z2wQsvMJILoZJ3PjoYGNNRlHBcM=
+  dependencies:
+    "@pixi/display" "6.0.0"
+
+"@pixi/canvas-graphics@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/canvas-graphics/download/@pixi/canvas-graphics-6.0.0.tgz#1209f56b4520dd1483a9d3c88b03cecf4adcbf73"
+  integrity sha1-Egn1a0Ug3RSDqdPIiwPOz0rcv3M=
+  dependencies:
+    "@pixi/canvas-display" "6.0.0"
+    "@pixi/canvas-renderer" "6.0.0"
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/graphics" "6.0.0"
+    "@pixi/math" "6.0.0"
+
+"@pixi/canvas-renderer@6.0.0", "@pixi/canvas-renderer@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/canvas-renderer/download/@pixi/canvas-renderer-6.0.0.tgz#ca38dc9f1b760e71ab8fc12637eae2f744ed6302"
+  integrity sha1-yjjcnxt2DnGrj8EmN+ri90TtYwI=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/compressed-textures@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/compressed-textures/download/@pixi/compressed-textures-6.0.0.tgz#3ac7328955f242679d72e50078c06ab0255571ac"
+  integrity sha1-OscyiVXyQmedcuUAeMBqsCVVcaw=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/loaders" "6.0.0"
+
+"@pixi/constants@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/constants/download/@pixi/constants-6.0.0.tgz#5ba5e99d57e5fc582103a105aac837935a04ba5f"
+  integrity sha1-W6XpnVfl/FghA6EFqsg3k1oEul8=
+
+"@pixi/core@6.0.0", "@pixi/core@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/core/download/@pixi/core-6.0.0.tgz#bcbc0a09f520b4c34bcdb167f9c5ae314a3fd613"
+  integrity sha1-vLwKCfUgtMNLzbFn+cWuMUo/1hM=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/runner" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/ticker" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/display@6.0.0", "@pixi/display@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/display/download/@pixi/display-6.0.0.tgz#409a21828004cba6c8d729e11f28de8cbd141314"
+  integrity sha1-QJohgoAEy6bI1ynhHyjejL0UExQ=
+  dependencies:
+    "@pixi/math" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/extract@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/extract/download/@pixi/extract-6.0.0.tgz#cf2dee657f6f65c8c2096344078e18c0ce640c0a"
+  integrity sha1-zy3uZX9vZcjCCWNEB44YwM5kDAo=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/filter-alpha@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/filter-alpha/download/@pixi/filter-alpha-6.0.0.tgz#d0c6096a11928cd85c64713346df4de0975332b1"
+  integrity sha1-0MYJahGSjNhcZHEzRt9N4JdTMrE=
+  dependencies:
+    "@pixi/core" "6.0.0"
+
+"@pixi/filter-blur@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/filter-blur/download/@pixi/filter-blur-6.0.0.tgz#7d6eae681080a93cacdf0373ea754dd28b25e823"
+  integrity sha1-fW6uaBCAqTys3wNz6nVN0osl6CM=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/settings" "6.0.0"
+
+"@pixi/filter-color-matrix@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/filter-color-matrix/download/@pixi/filter-color-matrix-6.0.0.tgz#c1825feb03e74cabb0d23765db82188e873b4d8a"
+  integrity sha1-wYJf6wPnTKuw0jdl24IYjoc7TYo=
+  dependencies:
+    "@pixi/core" "6.0.0"
+
+"@pixi/filter-displacement@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/filter-displacement/download/@pixi/filter-displacement-6.0.0.tgz#22e2331bf6373bf3755cf5590ab639c5a8899ae6"
+  integrity sha1-IuIzG/Y3O/N1XPVZCrY5xaiJmuY=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/math" "6.0.0"
+
+"@pixi/filter-fxaa@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/filter-fxaa/download/@pixi/filter-fxaa-6.0.0.tgz#b9db27775a39387145f3dcff9d50c01f830baec7"
+  integrity sha1-udsnd1o5OHFF89z/nVDAH4MLrsc=
+  dependencies:
+    "@pixi/core" "6.0.0"
+
+"@pixi/filter-motion-blur@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/filter-motion-blur/download/@pixi/filter-motion-blur-4.0.0.tgz#2a4f867f25a94763db3a872b8628645c5f9ea9b9"
+  integrity sha1-Kk+GfyWpR2PbOocrhihkXF+eqbk=
+
+"@pixi/filter-noise@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/filter-noise/download/@pixi/filter-noise-6.0.0.tgz#b2bc0bccb96923e5bd9f2dc4841092f28e9c65f6"
+  integrity sha1-srwLzLlpI+W9ny3EhBCS8o6cZfY=
+  dependencies:
+    "@pixi/core" "6.0.0"
+
+"@pixi/graphics@6.0.0", "@pixi/graphics@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/graphics/download/@pixi/graphics-6.0.0.tgz#aef76f9772dea1e54a149e04f43f5f2fed68f355"
+  integrity sha1-rvdvl3LeoeVKFJ4E9D9fL+1o81U=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/sprite" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/interaction@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/interaction/download/@pixi/interaction-6.0.0.tgz#917f3b344b2d54fe9562b009f4ebe2ca888acfe5"
+  integrity sha1-kX87NEstVP6VYrAJ9OviyoiKz+U=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/ticker" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/loaders@6.0.0", "@pixi/loaders@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/loaders/download/@pixi/loaders-6.0.0.tgz#f772c4456faff1d0664eb068d81c7e19e99237e9"
+  integrity sha1-93LERW+v8dBmTrBo2Bx+GemSN+k=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/utils" "6.0.0"
+    resource-loader "^3.0.1"
+
+"@pixi/math@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/math/download/@pixi/math-6.0.0.tgz#3fade6c46e6087648e53b5265ea8ef45d041b8d6"
+  integrity sha1-P63mxG5gh2SOU7UmXqjvRdBBuNY=
+
+"@pixi/mesh-extras@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/mesh-extras/download/@pixi/mesh-extras-6.0.0.tgz#9d7e8a48c382bad2978f07a9c13ad5d459dcd664"
+  integrity sha1-nX6KSMOCutKXjwepwTrV1Fnc1mQ=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/mesh" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/mesh@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/mesh/download/@pixi/mesh-6.0.0.tgz#3f771dd63cc41d5dba7d92e0a90e362ccfacd957"
+  integrity sha1-P3cd1jzEHV26fZLgqQ42LM+s2Vc=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/mixin-cache-as-bitmap@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/mixin-cache-as-bitmap/download/@pixi/mixin-cache-as-bitmap-6.0.0.tgz#a6ef2442a78bf8875bfd962625ac4668f6b8242b"
+  integrity sha1-pu8kQqeL+Idb/ZYmJaxGaPa4JCs=
+  dependencies:
+    "@pixi/canvas-renderer" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/sprite" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/mixin-get-child-by-name@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/mixin-get-child-by-name/download/@pixi/mixin-get-child-by-name-6.0.0.tgz#16022290b8ef34eda1b6c417bb6c616a980d9c0f"
+  integrity sha1-FgIikLjvNO2htsQXu2xhapgNnA8=
+  dependencies:
+    "@pixi/display" "6.0.0"
+
+"@pixi/mixin-get-global-position@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/mixin-get-global-position/download/@pixi/mixin-get-global-position-6.0.0.tgz#799a45aca7fc7bff32a7b411492e5cb64eeeae8e"
+  integrity sha1-eZpFrKf8e/8yp7QRSS5ctk7uro4=
+  dependencies:
+    "@pixi/display" "6.0.0"
+    "@pixi/math" "6.0.0"
+
+"@pixi/particles@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/particles/download/@pixi/particles-6.0.0.tgz#6be189abc79b3f5f0ce5364c5a42b6a02b107dd7"
+  integrity sha1-a+GJq8ebP18M5TZMWkK2oCsQfdc=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/polyfill@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/polyfill/download/@pixi/polyfill-6.0.0.tgz#f1314cac966dd3784674f8c9ee9d53a9fcd4ebf3"
+  integrity sha1-8TFMrJZt03hGdPjJ7p1TqfzU6/M=
+  dependencies:
+    object-assign "^4.1.1"
+    promise-polyfill "^8.2.0"
+
+"@pixi/prepare@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/prepare/download/@pixi/prepare-6.0.0.tgz#159ba9a670eafc8d7a74d6fea1b132f285dcc889"
+  integrity sha1-FZuppnDq/I16dNb+obEy8oXcyIk=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/graphics" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/text" "6.0.0"
+    "@pixi/ticker" "6.0.0"
+
+"@pixi/runner@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/runner/download/@pixi/runner-6.0.0.tgz#1b789f957f5c3e7b9ee23ce7e9fa15c14a83a025"
+  integrity sha1-G3iflX9cPnue4jzn6foVwUqDoCU=
+
+"@pixi/settings@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/settings/download/@pixi/settings-6.0.0.tgz#0e9fde41fb153c47c27f1c5c5a0b26874fc2cd6b"
+  integrity sha1-Dp/eQfsVPEfCfxxcWgsmh0/CzWs=
+  dependencies:
+    ismobilejs "^1.1.0"
+
+"@pixi/sprite-animated@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/sprite-animated/download/@pixi/sprite-animated-6.0.0.tgz#69ffcd0d476fe2186b06477ecc485b902d882a0f"
+  integrity sha1-af/NDUdv4hhrBkd+zEhbkC2IKg8=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/sprite" "6.0.0"
+    "@pixi/ticker" "6.0.0"
+
+"@pixi/sprite-tiling@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/sprite-tiling/download/@pixi/sprite-tiling-6.0.0.tgz#d799df0b8993c28c1b99973f74640dae28d138aa"
+  integrity sha1-15nfC4mTwowbmZc/dGQNrijROKo=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/sprite" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/sprite@6.0.0", "@pixi/sprite@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/sprite/download/@pixi/sprite-6.0.0.tgz#30fcc19207a9b6e206a68fbac96689df1652f88f"
+  integrity sha1-MPzBkgeptuIGpo+6yWaJ3xZS+I8=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/spritesheet@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/spritesheet/download/@pixi/spritesheet-6.0.0.tgz#609c3bfe24a2ed37baf17037a333806a0460c4e4"
+  integrity sha1-YJw7/iSi7Te68XA3ozOAagRgxOQ=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/loaders" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/text-bitmap@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/text-bitmap/download/@pixi/text-bitmap-6.0.0.tgz#9cdc6a1f683dbcd6f333f293afac9babe2999d91"
+  integrity sha1-nNxqH2g9vNbzM/KTr6ybq+KZnZE=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/loaders" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/mesh" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/text" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/text@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/text/download/@pixi/text-6.0.0.tgz#406b5e904fad9e2e469b725f87488d7832b1ef43"
+  integrity sha1-QGtekE+tni5Gm3Jfh0iNeDKx70M=
+  dependencies:
+    "@pixi/core" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/sprite" "6.0.0"
+    "@pixi/utils" "6.0.0"
+
+"@pixi/ticker@6.0.0", "@pixi/ticker@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/ticker/download/@pixi/ticker-6.0.0.tgz#884f8d4d856793dd5e0b379c9fa6af6cecff467b"
+  integrity sha1-iE+NTYVnk91eCzecn6avbOz/Rns=
+  dependencies:
+    "@pixi/settings" "6.0.0"
+
+"@pixi/utils@6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/@pixi/utils/download/@pixi/utils-6.0.0.tgz#c56cd25f6697ac0a704160521b446888e2fe4472"
+  integrity sha1-xWzSX2aXrApwQWBSG0RoiOL+RHI=
+  dependencies:
+    "@pixi/constants" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@types/earcut" "^2.1.0"
+    "@types/node" "^12.0.0"
+    earcut "^2.2.2"
+    eventemitter3 "^3.1.0"
+    url "^0.11.0"
+
 "@polka/url@^1.0.0-next.9":
   version "1.0.0-next.11"
   resolved "https://registry.npm.taobao.org/@polka/url/download/@polka/url-1.0.0-next.11.tgz#aeb16f50649a91af79dbe36574b66d0f9e4d9f71"
   integrity sha1-rrFvUGSaka952+NldLZtD55Nn3E=
+
+"@popperjs/core@^2.4.4":
+  version "2.9.0"
+  resolved "https://registry.npm.taobao.org/@popperjs/core/download/@popperjs/core-2.9.0.tgz#32e63212293dd3efbb521cd35a5020ab66eaa546"
+  integrity sha1-MuYyEik90++7UhzTWlAgq2bqpUY=
 
 "@sideway/address@^4.1.0":
   version "4.1.1"
@@ -995,6 +1361,11 @@
   integrity sha1-FwpAIjptZmAG2TyhKK8r6x2bGQE=
   dependencies:
     "@types/node" "*"
+
+"@types/earcut@^2.1.0":
+  version "2.1.1"
+  resolved "https://registry.npm.taobao.org/@types/earcut/download/@types/earcut-2.1.1.tgz#573a0af609f17005c751f6f4ffec49cfe358ea51"
+  integrity sha1-VzoK9gnxcAXHUfb0/+xJz+NY6lE=
 
 "@types/eslint-scope@^3.7.0":
   version "3.7.0"
@@ -1089,6 +1460,11 @@
   version "14.14.31"
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.31.tgz?cache=0&sync_timestamp=1613758114120&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
   integrity sha1-cihr0z0TeqDRUtR+x8F2JWPTQFU=
+
+"@types/node@^12.0.0":
+  version "12.20.4"
+  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-12.20.4.tgz?cache=0&sync_timestamp=1613758114120&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-12.20.4.tgz#73687043dd00fcb6962c60fbf499553a24d6bdf2"
+  integrity sha1-c2hwQ90A/LaWLGD79JlVOiTWvfI=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -1886,6 +2262,11 @@ async-limiter@~1.0.0:
   resolved "https://registry.npm.taobao.org/async-limiter/download/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
   integrity sha1-3TeelPDbgxCwgpH51kwyCXZmF/0=
 
+async-validator@^3.4.0:
+  version "3.5.1"
+  resolved "https://registry.npm.taobao.org/async-validator/download/async-validator-3.5.1.tgz#cd62b9688b2465f48420e27adb47760ab1b5559f"
+  integrity sha1-zWK5aIskZfSEIOJ620d2CrG1VZ8=
+
 async@^2.6.2:
   version "2.6.3"
   resolved "https://registry.npm.taobao.org/async/download/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
@@ -1915,6 +2296,13 @@ autoprefixer@^10.2.4:
     normalize-range "^0.1.2"
     postcss-value-parser "^4.1.0"
 
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.npm.taobao.org/axios/download/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=
+  dependencies:
+    follow-redirects "^1.10.0"
+
 babel-loader@^8.2.2:
   version "8.2.2"
   resolved "https://registry.npm.taobao.org/babel-loader/download/babel-loader-8.2.2.tgz?cache=0&sync_timestamp=1606424647115&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-loader%2Fdownload%2Fbabel-loader-8.2.2.tgz#9363ce84c10c9a40e6c753748e1441b60c8a0b81"
@@ -1931,6 +2319,14 @@ babel-plugin-dynamic-import-node@^2.3.3:
   integrity sha1-hP2hnJduxcbe/vV/lCez3vZuF6M=
   dependencies:
     object.assign "^4.1.0"
+
+babel-plugin-import@^1.13.3:
+  version "1.13.3"
+  resolved "https://registry.npm.taobao.org/babel-plugin-import/download/babel-plugin-import-1.13.3.tgz?cache=0&sync_timestamp=1606209853373&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-plugin-import%2Fdownload%2Fbabel-plugin-import-1.13.3.tgz#9dbbba7d1ac72bd412917a830d445e00941d26d7"
+  integrity sha1-nbu6fRrHK9QSkXqDDUReAJQdJtc=
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0"
+    "@babel/runtime" "^7.0.0"
 
 babel-plugin-polyfill-corejs2@^0.1.4:
   version "0.1.10"
@@ -2815,6 +3211,11 @@ csstype@^2.6.8:
   resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.16.tgz#544d69f547013b85a40d15bff75db38f34fe9c39"
   integrity sha1-VE1p9UcBO4WkDRW/912zjzT+nDk=
 
+dayjs@1.x:
+  version "1.10.4"
+  resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
+  integrity sha1-jlRKm4aD9heD9XCYCoqA6vVKseI=
+
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.npm.taobao.org/debug/download/debug-2.6.9.tgz?cache=0&sync_timestamp=1607566551397&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -2996,6 +3397,13 @@ dom-serializer@0:
     domelementtype "^2.0.1"
     entities "^2.0.0"
 
+dom7@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/dom7/download/dom7-3.0.0.tgz#b861ce5d67a6becd7aaa3ad02942ff14b1240331"
+  integrity sha1-uGHOXWemvs16qjrQKUL/FLEkAzE=
+  dependencies:
+    ssr-window "^3.0.0-alpha.1"
+
 domelementtype@1, domelementtype@^1.3.1:
   version "1.3.1"
   resolved "https://registry.npm.taobao.org/domelementtype/download/domelementtype-1.3.1.tgz?cache=0&sync_timestamp=1606866004215&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomelementtype%2Fdownload%2Fdomelementtype-1.3.1.tgz#d048c44b37b0d10a7f2a3d5fee3f4333d790481f"
@@ -3051,6 +3459,11 @@ duplexer@^0.1.2:
   resolved "https://registry.npm.taobao.org/duplexer/download/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
   integrity sha1-Or5DrvODX4rgd9E23c4PJ2sEAOY=
 
+earcut@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.npm.taobao.org/earcut/download/earcut-2.2.2.tgz#41b0bc35f63e0fe80da7cddff28511e7e2e80d11"
+  integrity sha1-QbC8NfY+D+gNp83f8oUR5+LoDRE=
+
 easy-stack@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/easy-stack/download/easy-stack-1.0.1.tgz?cache=0&sync_timestamp=1605130346827&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feasy-stack%2Fdownload%2Feasy-stack-1.0.1.tgz#8afe4264626988cabb11f3c704ccd0c835411066"
@@ -3065,6 +3478,19 @@ electron-to-chromium@^1.3.649:
   version "1.3.678"
   resolved "https://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.678.tgz?cache=0&sync_timestamp=1614711886995&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron-to-chromium%2Fdownload%2Felectron-to-chromium-1.3.678.tgz#c7c6960463167126b7ed076fade14cac6223bfff"
   integrity sha1-x8aWBGMWcSa37QdvreFMrGIjv/8=
+
+element-plus@^1.0.2-beta.33:
+  version "1.0.2-beta.33"
+  resolved "https://registry.npm.taobao.org/element-plus/download/element-plus-1.0.2-beta.33.tgz?cache=0&sync_timestamp=1614748407727&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felement-plus%2Fdownload%2Felement-plus-1.0.2-beta.33.tgz#0e924c8872dbc14e916ed5d6452d9799b04d4c60"
+  integrity sha1-DpJMiHLbwU6RbtXWRS2XmbBNTGA=
+  dependencies:
+    "@popperjs/core" "^2.4.4"
+    async-validator "^3.4.0"
+    dayjs "1.x"
+    lodash "^4.17.20"
+    mitt "^2.1.0"
+    normalize-wheel "^1.0.1"
+    resize-observer-polyfill "^1.5.1"
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -3385,6 +3811,11 @@ event-pubsub@4.3.0:
   resolved "https://registry.npm.taobao.org/event-pubsub/download/event-pubsub-4.3.0.tgz?cache=0&sync_timestamp=1606361490827&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fevent-pubsub%2Fdownload%2Fevent-pubsub-4.3.0.tgz#f68d816bc29f1ec02c539dc58c8dd40ce72cb36e"
   integrity sha1-9o2Ba8KfHsAsU53FjI3UDOcss24=
 
+eventemitter3@^3.1.0:
+  version "3.1.2"
+  resolved "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
+  integrity sha1-LT1I+cNGaY/Og6hdfWZOmFNd9uc=
+
 eventemitter3@^4.0.0:
   version "4.0.7"
   resolved "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-4.0.7.tgz?cache=0&sync_timestamp=1598517724259&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feventemitter3%2Fdownload%2Feventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
@@ -3670,7 +4101,7 @@ flatted@^3.1.0:
   resolved "https://registry.npm.taobao.org/flatted/download/flatted-3.1.1.tgz?cache=0&sync_timestamp=1611059419064&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fflatted%2Fdownload%2Fflatted-3.1.1.tgz#c4b489e80096d9df1dfc97c79871aea7c617c469"
   integrity sha1-xLSJ6ACW2d8d/JfHmHGup8YXxGk=
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.13.3"
   resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.13.3.tgz#e5598ad50174c1bc4e872301e82ac2cd97f90267"
   integrity sha1-5VmK1QF0wbxOhyMB6CrCzZf5Amc=
@@ -3867,6 +4298,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0,
   resolved "https://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha1-/wQLKwhTsjw9MQJ1I3BvGIXXa+4=
 
+gsap@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/gsap/download/gsap-2.0.2.tgz#c82bde9a078f7922869fc2eb5aaecfa7592d1c2b"
+  integrity sha1-yCvemgePeSKGn8LrWq7Pp1ktHCs=
+
 gzip-size@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npm.taobao.org/gzip-size/download/gzip-size-6.0.0.tgz?cache=0&sync_timestamp=1605523140245&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgzip-size%2Fdownload%2Fgzip-size-6.0.0.tgz#065367fd50c239c0671cbcbad5be3e2eeb10e462"
@@ -3966,6 +4402,11 @@ hosted-git-info@^2.1.4:
   version "2.8.8"
   resolved "https://registry.npm.taobao.org/hosted-git-info/download/hosted-git-info-2.8.8.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhosted-git-info%2Fdownload%2Fhosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
   integrity sha1-dTm9S8Hg4KiVgVouAmJCCxKFhIg=
+
+howler@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/howler/download/howler-2.2.1.tgz#a521a9b495841e8bb9aa12e651bebba0affc179e"
+  integrity sha1-pSGptJWEHou5qhLmUb67oK/8F54=
 
 hpack.js@^2.1.6:
   version "2.1.6"
@@ -4574,6 +5015,11 @@ isexe@^2.0.0:
   resolved "https://registry.npm.taobao.org/isexe/download/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
+ismobilejs@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/ismobilejs/download/ismobilejs-1.1.1.tgz#c56ca0ae8e52b24ca0f22ba5ef3215a2ddbbaa0e"
+  integrity sha1-xWygro5Sskyg8iul7zIVot27qg4=
+
 isobject@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/isobject/download/isobject-2.1.0.tgz#f065561096a3f1da2ef46272f815c840d87e0c89"
@@ -5051,6 +5497,11 @@ mini-css-extract-plugin@^1.3.7:
     schema-utils "^3.0.0"
     webpack-sources "^1.1.0"
 
+mini-signals@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/mini-signals/download/mini-signals-1.2.0.tgz#45b08013c5fae51a24aa1a935cd317c9ed721d74"
+  integrity sha1-RbCAE8X65RokqhqTXNMXye1yHXQ=
+
 minimalistic-assert@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/minimalistic-assert/download/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
@@ -5103,6 +5554,11 @@ minizlib@^2.1.1:
   dependencies:
     minipass "^3.0.0"
     yallist "^4.0.0"
+
+mitt@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/mitt/download/mitt-2.1.0.tgz?cache=0&sync_timestamp=1594823602623&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmitt%2Fdownload%2Fmitt-2.1.0.tgz#f740577c23176c6205b121b2973514eade1b2230"
+  integrity sha1-90BXfCMXbGIFsSGylzUU6t4bIjA=
 
 mixin-deep@^1.2.0:
   version "1.3.2"
@@ -5161,6 +5617,11 @@ multicast-dns@^6.0.1:
   dependencies:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
+
+mutation-observer@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/mutation-observer/download/mutation-observer-1.0.3.tgz#42e9222b101bca82e5ba9d5a7acf4a14c0f263d0"
+  integrity sha1-QukiKxAbyoLlup1aes9KFMDyY9A=
 
 mute-stream@0.0.8:
   version "0.0.8"
@@ -5301,6 +5762,11 @@ normalize-url@^3.0.0:
   resolved "https://registry.npm.taobao.org/normalize-url/download/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha1-suHE3E98bVd0PfczpPWXjRhlBVk=
 
+normalize-wheel@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/normalize-wheel/download/normalize-wheel-1.0.1.tgz#aec886affdb045070d856447df62ecf86146ec45"
+  integrity sha1-rsiGr/2wRQcNhWRH32Ls+GFG7EU=
+
 npm-run-path@^2.0.0:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/npm-run-path/download/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
@@ -5322,7 +5788,7 @@ nth-check@^1.0.2:
   dependencies:
     boolbase "~1.0.0"
 
-object-assign@^4.0.1:
+object-assign@^4.0.1, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npm.taobao.org/object-assign/download/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
@@ -5581,6 +6047,11 @@ parse-node-version@^1.0.1:
   resolved "https://registry.npm.taobao.org/parse-node-version/download/parse-node-version-1.0.1.tgz#e2b5dbede00e7fa9bc363607f53327e8b073189b"
   integrity sha1-4rXb7eAOf6m8NjYH9TMn6LBzGJs=
 
+parse-uri@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/parse-uri/download/parse-uri-1.0.3.tgz#f3c24a74907a4e357c1741e96ca9faadecfd6db5"
+  integrity sha1-88JKdJB6TjV8F0HpbKn6rez9bbU=
+
 parse5-htmlparser2-tree-adapter@^6.0.0:
   version "6.0.1"
   resolved "https://registry.npm.taobao.org/parse5-htmlparser2-tree-adapter/download/parse5-htmlparser2-tree-adapter-6.0.1.tgz#2cdf9ad823321140370d4dbf5d3e92c7c8ddc6e6"
@@ -5692,6 +6163,52 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.npm.taobao.org/pinkie/download/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+
+pixi-spine@^2.1.11:
+  version "2.1.11"
+  resolved "https://registry.npm.taobao.org/pixi-spine/download/pixi-spine-2.1.11.tgz#a11f76d357fceadbc19013a6a4ef4a3acb3d763e"
+  integrity sha1-oR9201f86tvBkBOmpO9KOss9dj4=
+
+pixi.js@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/pixi.js/download/pixi.js-6.0.0.tgz#d77b98f2f52e978d1b17a984ebb6a53935b9d2e7"
+  integrity sha1-13uY8vUul40bF6mE67alOTW50uc=
+  dependencies:
+    "@pixi/accessibility" "6.0.0"
+    "@pixi/app" "6.0.0"
+    "@pixi/compressed-textures" "6.0.0"
+    "@pixi/constants" "6.0.0"
+    "@pixi/core" "6.0.0"
+    "@pixi/display" "6.0.0"
+    "@pixi/extract" "6.0.0"
+    "@pixi/filter-alpha" "6.0.0"
+    "@pixi/filter-blur" "6.0.0"
+    "@pixi/filter-color-matrix" "6.0.0"
+    "@pixi/filter-displacement" "6.0.0"
+    "@pixi/filter-fxaa" "6.0.0"
+    "@pixi/filter-noise" "6.0.0"
+    "@pixi/graphics" "6.0.0"
+    "@pixi/interaction" "6.0.0"
+    "@pixi/loaders" "6.0.0"
+    "@pixi/math" "6.0.0"
+    "@pixi/mesh" "6.0.0"
+    "@pixi/mesh-extras" "6.0.0"
+    "@pixi/mixin-cache-as-bitmap" "6.0.0"
+    "@pixi/mixin-get-child-by-name" "6.0.0"
+    "@pixi/mixin-get-global-position" "6.0.0"
+    "@pixi/particles" "6.0.0"
+    "@pixi/polyfill" "6.0.0"
+    "@pixi/prepare" "6.0.0"
+    "@pixi/runner" "6.0.0"
+    "@pixi/settings" "6.0.0"
+    "@pixi/sprite" "6.0.0"
+    "@pixi/sprite-animated" "6.0.0"
+    "@pixi/sprite-tiling" "6.0.0"
+    "@pixi/spritesheet" "6.0.0"
+    "@pixi/text" "6.0.0"
+    "@pixi/text-bitmap" "6.0.0"
+    "@pixi/ticker" "6.0.0"
+    "@pixi/utils" "6.0.0"
 
 pkg-dir@^3.0.0:
   version "3.0.0"
@@ -6144,6 +6661,11 @@ promise-inflight@^1.0.1:
   resolved "https://registry.npm.taobao.org/promise-inflight/download/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
+promise-polyfill@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.npm.taobao.org/promise-polyfill/download/promise-polyfill-8.2.0.tgz#367394726da7561457aba2133c9ceefbd6267da0"
+  integrity sha1-NnOUcm2nVhRXq6ITPJzu+9YmfaA=
+
 proxy-addr@~2.0.5:
   version "2.0.6"
   resolved "https://registry.npm.taobao.org/proxy-addr/download/proxy-addr-2.0.6.tgz#fdc2336505447d3f2f2c638ed272caf614bbb2bf"
@@ -6184,6 +6706,11 @@ q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.npm.taobao.org/q/download/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
+
+qrious@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npm.taobao.org/qrious/download/qrious-4.0.2.tgz#09c4d4079d2b961617f62c69cff3b9bb66a39693"
+  integrity sha1-CcTUB50rlhYX9ixpz/O5u2ajlpM=
 
 qs@6.7.0:
   version "6.7.0"
@@ -6388,6 +6915,11 @@ requires-port@^1.0.0:
   resolved "https://registry.npm.taobao.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npm.taobao.org/resize-observer-polyfill/download/resize-observer-polyfill-1.5.1.tgz?cache=0&sync_timestamp=1602337238565&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fresize-observer-polyfill%2Fdownload%2Fresize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha1-DpAg3T0hAkRY1OvSfiPkAmmBBGQ=
+
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/resolve-cwd/download/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
@@ -6417,6 +6949,14 @@ resolve@^1.10.0, resolve@^1.14.2:
   dependencies:
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
+
+resource-loader@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npm.taobao.org/resource-loader/download/resource-loader-3.0.1.tgz#33355bb5421e2994f59454bbc7f6dbff8df06d47"
+  integrity sha1-MzVbtUIeKZT1lFS7x/bb/43wbUc=
+  dependencies:
+    mini-signals "^1.2.0"
+    parse-uri "^1.0.0"
 
 restore-cursor@^3.1.0:
   version "3.1.0"
@@ -6878,6 +7418,11 @@ sprintf-js@~1.0.2:
   resolved "https://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
+ssr-window@^3.0.0, ssr-window@^3.0.0-alpha.1:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/ssr-window/download/ssr-window-3.0.0.tgz#fd5b82801638943e0cc704c4691801435af7ac37"
+  integrity sha1-/VuCgBY4lD4MxwTEaRgBQ1r3rDc=
+
 ssri@^8.0.0, ssri@^8.0.1:
   version "8.0.1"
   resolved "https://registry.npm.taobao.org/ssri/download/ssri-8.0.1.tgz#638e4e439e2ffbd2cd289776d5ca457c4f51a2af"
@@ -7071,6 +7616,14 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+swiper@^6.4.15:
+  version "6.4.15"
+  resolved "https://registry.npm.taobao.org/swiper/download/swiper-6.4.15.tgz#0fb153b3000c0dd26ab21ea9e8d1ab0ebe9e33cb"
+  integrity sha1-D7FTswAMDdJqsh6p6NGrDr6eM8s=
+  dependencies:
+    dom7 "^3.0.0"
+    ssr-window "^3.0.0"
+
 table@^6.0.4:
   version "6.0.7"
   resolved "https://registry.npm.taobao.org/table/download/table-6.0.7.tgz?cache=0&sync_timestamp=1609732758667&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftable%2Fdownload%2Ftable-6.0.7.tgz#e45897ffbcc1bcf9e8a87bf420f2c9e5a7a52a34"
@@ -7224,6 +7777,16 @@ totalist@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/totalist/download/totalist-1.1.0.tgz#a4d65a3e546517701e3e5c37a47a70ac97fe56df"
   integrity sha1-pNZaPlRlF3AePlw3pHpwrJf+Vt8=
+
+touchjs@^0.2.14:
+  version "0.2.14"
+  resolved "https://registry.npm.taobao.org/touchjs/download/touchjs-0.2.14.tgz#f5585b4ea14809bfc4edb40a51e626d01851742e"
+  integrity sha1-9VhbTqFICb/E7bQKUeYm0BhRdC4=
+
+transitionEnd@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/transitionEnd/download/transitionEnd-1.0.2.tgz?cache=0&sync_timestamp=1610614376077&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2FtransitionEnd%2Fdownload%2FtransitionEnd-1.0.2.tgz#1914db5b45a7efdc34a01af69285a3a693871633"
+  integrity sha1-GRTbW0Wn79w0oBr2koWjppOHFjM=
 
 tslib@^1.10.0, tslib@^1.9.0:
   version "1.14.1"
@@ -7449,6 +8012,14 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+vconsole@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.npm.taobao.org/vconsole/download/vconsole-3.4.0.tgz?cache=0&sync_timestamp=1610614374780&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvconsole%2Fdownload%2Fvconsole-3.4.0.tgz#2cf2ffaa86cd7ab736997a22b63d05627c6ab567"
+  integrity sha1-LPL/qobNerc2mXoitj0FYnxqtWc=
+  dependencies:
+    mutation-observer "^1.0.3"
+    transitionEnd "^1.0.2"
 
 vendors@^1.0.0:
   version "1.0.4"

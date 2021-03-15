@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "font1680";
+    src: url("font1680.eot"); /* IE9 */
+    src: url("font1680.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("font1680.woff") format("woff"), /* chrome、firefox */
+    url("font1680.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("font1680.svg#font1680") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
